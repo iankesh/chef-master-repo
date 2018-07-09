@@ -1,0 +1,21 @@
+{
+  "name": "maven",
+  "description": "",
+  "json_class": "Chef::Role",
+  "default_attributes": {
+
+  },
+  "override_attributes": {
+    "java": {
+      "jdk_version": "8"
+    }
+  },
+  "chef_type": "role",
+  "run_list": [
+    "recipe[java]",
+    "recipe[maven]"
+  ],
+  "env_run_lists": {
+
+  }
+}
