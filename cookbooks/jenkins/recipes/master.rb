@@ -34,4 +34,6 @@ rescue Chef::Exceptions::RecipeNotFound
     "`#{node['jenkins']['master']['install_method']}' is not supported by " \
     'this cookbook. Please ensure you have spelled it correctly. If you ' \
     'continue to encounter this error, please file an issue.'
+jenkins_plugin 'Git'
 end
+#jenkins_plugin 'Git'
